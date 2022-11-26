@@ -7,6 +7,36 @@
 
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/362d290da8.js" crossorigin="anonymous"></script>
+
+
+     
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('JbkMsKfAPXR2sBjd0');
+        })();
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_0dl5zzo', 'template_v2fd4kw', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        alert("Sent!");
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        alert(JSON.stringify(error));
+                    });
+            });
+        }
+    </script>
     
 
     <title>Squant</title>
@@ -65,7 +95,7 @@
             <div class="banner-box banner-box2">
                 <h4>SQuant Diff</h4>
                 <h2>Upcomming </h2>
-                <span>Mr Yen Strategy</span>
+                <span>The best classic dress is on sale at cara</span>
                 <a href="./Components/Indicators/Indicators.html"><button class="white">Learn More</button></a>
             </div>
             
@@ -91,15 +121,15 @@
         <a href="https://kinetick.com/NinjaTrader"><img src="./Img/kin2.png" alt="_blank"></a>
     </section> 
 
-    <!--Sign up Sectio -->
-    <section id="newsletter" class="section-p1 section-m1" >
+   <!--Sign up Section -->
+   <section id="newsletter" class="section-p1 section-m1" >
         <div class="newstext">
             <h4>Sign Up For Newsletter</h4>
             <p>Get E-mail updates about our latest shop and <span>special offers</span>.</p>
         </div>
         <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
+            <input type="email" placeholder="Your email address" name="user_email" >
+            <button class="normal" type="submit" value="Send">Sign Up</button>
         </div>
     </section>
 
