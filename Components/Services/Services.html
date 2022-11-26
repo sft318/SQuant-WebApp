@@ -26,9 +26,9 @@
             document.getElementById('form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
+                //this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
-                emailjs.sendForm('service_0dl5zzo', 'template_v2fd4kw', this)
+                emailjs.sendForm('service_0dl5zzo', 'template_kcw9je7', this)
                     .then(function() {
                         console.log('SUCCESS!');
                         alert("Sent!");
@@ -86,16 +86,16 @@
 
  
 
-    <!--Sign up Section -->
+   <!--Sign up Section -->
     <section id="newsletter" class="section-p1 section-m1" >
         <div class="newstext">
             <h4>Sign Up For Newsletter</h4>
             <p>Get E-mail updates about our latest shop and <span>special offers</span>.</p>
         </div>
-        <div class="form">
+        <form id="form" class="form">
             <input type="email" placeholder="Your email address" name="user_email" >
-            <button class="normal" type="submit" value="Send">Sign Up</button>
-        </div>
+            <button class="normal" type="submit" value="Send">submit</button>
+        </form>
     </section>
 
 
