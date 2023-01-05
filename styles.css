@@ -109,14 +109,6 @@ button.white {
     justify-content: center;
 }
 
-#navbar i {
-    color: #1a1a1a;
-    font-size: 14px;
-    padding: 20px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
 #navbar li {
     list-style: none;
     padding: 0 20px;
