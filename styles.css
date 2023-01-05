@@ -124,7 +124,7 @@ button.white {
     color: rgb(6, 6, 6);
     transition: 0.3s ease;
 }
-#navbar li a i {
+#navbar i {
     color: #189e95;
     font-size: 24px;
     padding: 10px;
