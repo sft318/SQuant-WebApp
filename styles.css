@@ -70,6 +70,7 @@ button.white {
 
 
 
+
 #header {
     display: flex;
     align-items: center;
@@ -130,6 +131,12 @@ button.white {
     font-weight: 600;
     color: rgb(6, 6, 6);
     transition: 0.3s ease;
+}
+#navbar li a i {
+    color: #189e95;
+    font-size: 24px;
+    padding: 10px;
+    border-color: #222;
 }
 
 #navbar  li a:hover,
