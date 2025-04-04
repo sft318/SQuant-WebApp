@@ -384,8 +384,8 @@ button.white {
 }
 #banner2 img {
     padding: 30px;
-    min-width: 40%;
-    height: 33vh;
+    min-width: 10%;
+    height: 10vh;
     border-radius: 3px;
     margin-right: 20px ;
 }
