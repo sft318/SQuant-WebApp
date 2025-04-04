@@ -563,7 +563,7 @@ button.white {
 
 /* Discloute */
 
-#discloure {
+#footer {
     display: flex;
     width: 100%;
     height: 100%;
@@ -573,18 +573,18 @@ button.white {
     background-color: #041342;
     border-radius: 5px;
 }
-#discloure .dis-container {
+#footer .dis-container {
     padding: 80px 80px 60px 60px;
     margin: 40px 0 60px 0;
 }
-#discloure .dis-container h2 {
+#footer .dis-container h2 {
     font-size: 28px;
     text-align: center;
     color: #ffbd27;
     line-height: 25px;
     padding-bottom: 20px;
 }
-#discloure .dis-container p {
+#footer .dis-container p {
     font-size: 18px;
     text-align: justify;
     color: #fff;
